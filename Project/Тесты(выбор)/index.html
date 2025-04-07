@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/reset.css">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/style.css">
+    <title>Тесты - Sofios</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+
+    <div class="v_tests">
+        <div class="v_tests_title">Тесты</div>
+        <div class="v_tests_list">
+            <button class="v_test_card">Алгебра</button>
+            <button class="v_test_card">Английский язык</button>
+            <button class="v_test_card" onclick="window.location = '../Тесты по предмету/index.html'">Биология</button>
+            <button class="v_test_card">Вероятность и статистика</button>
+            <button class="v_test_card">География</button>
+            <button class="v_test_card">Геометрия</button>
+            <button class="v_test_card">Информатика</button>
+            <button class="v_test_card">История</button>
+            <button class="v_test_card">Литература</button>
+            <button class="v_test_card">Обществознание</button>
+            <button class="v_test_card">ОБЖ</button>
+            <button class="v_test_card">Русский язык</button>
+            <button class="v_test_card">Физика</button>
+            <button class="v_test_card">Химия</button>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+
+</body>
+
+</html>

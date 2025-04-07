@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/reset.css">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/style.css">
+    <title>Тест по теме: Жизнедеятельность клетки - Sofios</title>
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+
+    
+    <div class="test_title">Тест по теме: Жизнедеятельность клетки <br> Вариант 2</div>
+
+    <div id="test"></div>
+    <div class="ans_flex">
+        <button id="button">Проверить</button>
+    </div>
+
+    
+
+
+    <script>let test = document.querySelector('#test');
+
+        let questions = [
+            {
+                text: '1. Совокупность реакций распада веществ в клетке, сопровождающихся выделением энергии, получила название:',
+                text_ans: '1) метаболизм; 2) диссимиляция; 3) ассимиляция; 4) редупликация',
+                right: '2',
+            },
+            {
+                text: '2. Процесс обмена веществ и энергии в клетке называется:',
+                text_ans: '1) биосинтез; 2) фотосинтез; 3) транскрипция; 4) метаболизм',
+                right: '4',
+            },
+            {
+                text: '3. Сколько этапов включает энергетический обмен в клетке:',
+                text_ans: '1) три; 2) четыре; 3) два; 4) пять',
+                right: '1',
+            },
+            {
+                text: '4. Крахмал и гликоген вовлекаются в энергетический обмен:',
+                text_ans: '1) непосредственно сразу; 2) после расщепления до дисахаридов; 3) после расщепления до моносахаридов; 4) после окисления до углекислого газа и воды',
+                right: '3',
+            },
+            {
+                text: '5. Белки вовлекаются в энергетический обмен:',
+                text_ans: '1) постоянно, наряду с жирами; 2) постоянно, наряду с углеводами; 3) когда израсходован запас углеводов; 4) когда израсходован запас углеводов и жиров',
+                right: '4',
+            },
+            {
+                text: '6. Реакции гликолиза протекают:',
+                text_ans: '1) на кристах митохондрий в присутствии кислорода; 2) на кристах митохондрий в отсутствии кислорода; 3) в цитоплазме в отсутствии кислорода; 4) в цитоплазме в присутствии кислорода',
+                right: '3',
+            },
+            {
+                text: '7. При бескислородном дыхании пировиноградная кислота – продукт расщепления глюкозы, превращается:',
+                text_ans: '1) в углекислый газ и воду; 2) в этиловый спирт и углекислый газ; 3) в молочную кислоту и углекислый газ; 4) в молочную кислоту либо этиловый спирт и углекислый газ',
+                right: '4',
+            },
+            {
+                text: '8. Непосредственным источником энергии для образования АТФ служат:',
+                text_ans: '1) ферменты; 2) вода; 3) катионы водорода и электроны; 4) хлорофилл',
+                right: '3',
+            },
+            {
+                text: '9. В процессе энергетического обмена не образуется:',
+                text_ans: '1) гликоген; 2) вода; 3) углекислый газ; 4) АТФ',
+                right: '1',
+            },
+            {
+                text: '10. Фотолиз воды осуществляется:',
+                text_ans: '1) в световой фазе фотосинтеза; 2) в темновой фазе фотосинтеза; 3) при бескислородном гликолизе; 4) при кислородном гликолизе',
+                right: '1',
+            },
+            {
+                text: '11. Генетический код коровы и человека:',
+                text_ans: '1) одинаковый; 2) есть отличия; 3) принципиально другая структура; 4) разные кодоны',
+                right: '1',
+            },
+            {
+                text: '12. Редупликация – это процесс:',
+                text_ans: '1) синтеза и – РНК на одной из цепей ДНК; 2) удвоение ДНК; 3) считывание информации с и – РНК; 4) присоединения т – РНК к аминокислоте',
+                right: '2',
+            },
+            {
+                text: '13. Синтез белков происходит:',
+                text_ans: '1) на рибосомах; 2) в митохондриях; 3) в ядре; 4) на лизосомах',
+                right: '1',
+            },
+            {
+                text: '14. Период между двумя делениями клетки называется:',
+                text_ans: '1) анафаза; 2) телофаза; 3) профаза; 4) интерфаза',
+                right: '4',
+            },
+            {
+                text: '15. В результате митоза из одной клетки:',
+                text_ans: '1) образуются две дочерние клетки – точные копии материнской; 2) образуются две клетки с половинным набором хромосом; 3) образуются две разные клетки; 4) образуются четыре дочерние клетки – точные копии материнской',
+                right: '1',
+            },
+        ];
+
+
+        for (let question of questions) {
+            let div = document.createElement('div');
+            test.appendChild(div);
+            div.classList.add('test_card');
+
+            let p = document.createElement('p');
+            p.innerHTML = question.text;
+            div.appendChild(p);
+
+            let p2 = document.createElement('p');
+            p2.innerHTML = question.text_ans;
+            div.appendChild(p2);
+
+            let input = document.createElement('input');
+            input.dataset.right = question.right;
+            div.appendChild(input);
+            input.classList.add('test_ans');
+
+            let ans = document.createElement('div');
+            ans.innerHTML = question.right;
+        }
+
+        let ans_correct = 0;
+        let ans_all = 0;
+        let ans_flex = document.querySelector(".ans_flex")
+        let ans = document.createElement('div');
+        ans_flex.appendChild(ans)
+        ans.classList.add('ans_result_h');
+        let button = document.querySelector('#button');
+        button.addEventListener('click', function () {
+            ans_all = 0;
+            ans_correct = 0;
+            let inputs = document.querySelectorAll('#test input');
+
+            for (let input of inputs) {
+                input.classList.remove('correct');
+                input.classList.remove('incorrect');
+                ans_all += 1;
+                
+                if (input.value.toLowerCase() == input.dataset.right.toLowerCase()) {
+                    input.classList.add('correct');
+                    ans_correct += 1;
+                } else {
+                    input.classList.add('incorrect');
+                }
+            }
+            ans.innerHTML = "У вас " + ans_correct + " правильных ответов из " + ans_all;
+            ans.classList.remove("ans_result_v");
+            ans.classList.add("ans_result_v");
+        })
+        ;</script>
+  
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+
+</body>
+
+</html>

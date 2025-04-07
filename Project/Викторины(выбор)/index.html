@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/reset.css">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/style.css">
+    <title>Викторины - Sofios</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+
+    <div class="v_quiz">
+        <div class="v_quiz_title">Викторины</div>
+        <div class="v_quiz_list">
+            <button class="v_quiz_card">Английский язык</button>
+            <button class="v_quiz_card">Биология</button>
+            <button class="v_quiz_card">География</button>
+            <button class="v_quiz_card">Информатика</button>
+            <button class="v_quiz_card">История</button>
+            <button class="v_quiz_card">Математика</button>
+            <button class="v_quiz_card">Обществознание</button>
+            <button class="v_quiz_card" onclick="window.location = '../Тесты по предмету/index.html'">Русский язык</button>
+            <button class="v_quiz_card">Физика</button>
+            <button class="v_quiz_card">Химия</button>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+
+</body>
+
+</html>

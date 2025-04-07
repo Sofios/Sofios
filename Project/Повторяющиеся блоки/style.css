@@ -1,0 +1,1057 @@
+button {
+    color: #000;
+}
+
+header {
+    z-index: 1;
+    background: #f6f6f6;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_element,
+.auth {
+    padding: 8px;
+}
+
+.header_element:first-child {
+    vertical-align: middle;
+    margin: auto 8px auto 16px;
+    width: 50px;
+}
+
+.header_element:nth-child(2) {
+    background: #e5e5e5;
+    border-radius: 8px;
+}
+
+.header_element:nth-child(3) {
+    visibility: hidden;
+    display: none;
+}
+
+.signin {
+    background: #e3e3e3;
+    border: 1px #1e1e1e inset;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.reg {
+    background: #2c2c2c;
+    border: 1px #1e1e1e inset;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 32px;
+}
+
+
+
+/* ------------------------------------------------ */
+
+/* @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  } */
+
+
+footer {
+    background: #333333;
+    height: auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_list_practice,
+.footer_list_theory,
+.footer_list_about {
+    padding: 2vw;
+}
+
+.footer_list_practice li,
+.footer_list_theory li,
+.footer_list_about li {
+    margin-top: 8px;
+}
+
+.footer_title_practice,
+.footer_title_theory,
+.footer_title_about {
+    width: 14vw;
+    font-weight: 600;
+    font-size: 2vw;
+    padding-bottom: 2vw;
+    border-bottom: 1px #666666 solid;
+}
+
+.footer_title_theory {
+    width: 28vw;
+}
+
+.footer_text {
+    font-size: 1.4vw;
+}
+
+.footer_theory_text {
+    display: flex;
+    gap: 2vw;
+}
+
+
+
+
+
+
+
+/* Главная страница сайта */
+
+.name {
+    display: flex;
+    padding-top: 70px;
+    height: 47vw;
+    background: url("https://i.pinimg.com/originals/76/74/af/7674afaab0239fcc95db982e75bdc684.jpg");
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.name_title {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.name_word {
+    font-size: 3vw;
+    color: #757575;
+}
+
+/* ----------------------------------------------------- */
+
+.description_title,
+.theory_title,
+.practice_title {
+    margin-bottom: 2vw;
+    font-weight: 900;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.description {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 0.4fr);
+    grid-template-rows: repeat(3, 0.3fr);
+}
+
+.description_practice,
+.description_community,
+.description_theory {
+    width: 100%;
+}
+
+.description_practice_title,
+.description_community_title,
+.description_theory_title {
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.description_practice_text,
+.description_community_text,
+.description_theory_text {
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.description img {
+    width: 100%;
+}
+
+
+h1 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* ------------------------------------------------------ */
+
+.theory_list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+}
+
+.theory_card {
+    width: 27vw;
+    height: 27vw;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #d9d9d9 solid;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 25%);
+}
+
+.theory_card:hover {
+    transition: .3s;
+    width: 28vw;
+    height: 28vw;
+    margin: auto;
+}
+
+.theory_card_text,
+.practice_card_text {
+    text-align: left;
+    color: #cccccc;
+    font-size: 1.5vw;
+    overflow: hidden;
+    padding-top: 89%;
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.5vw;
+}
+
+@keyframes hide {
+    100% {
+        padding-top: 0;
+    }
+}
+
+.theory_card:hover .theory_card_text {
+    animation: hide 2s forwards;
+}
+
+.theory_card:first-child {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url(/Изображения/Русский\ язык.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.theory_card:nth-child(2) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url(/Изображения/Математика.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.theory_card:nth-child(3) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url(/Изображения/Физика.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.theory_card:nth-child(4) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url(/Изображения/Химия.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.theory_card:nth-child(5) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url(/Изображения/Биология.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.theory_card:last-child {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url(/Изображения/Информатика.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.theory_all {
+    text-align: center;
+}
+
+.theory_all_button {
+    width: 24vw;
+    height: 7vw;
+    background: #2c2c2c;
+    color: #f5f5f5;
+    border-radius: 20px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    font-size: 2.5vw;
+}
+
+/* -------------------------------------------- */
+
+.practice_list {
+    display: flex;
+    justify-content: center;
+}
+
+.practice_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 27vw;
+    height: 27vw;
+    padding: 20px;
+    margin: 8px;
+    border: 1px #d9d9d9 solid;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 25%);
+}
+
+.practice_card:hover {
+    transition: .3s;
+    width: 28vw;
+    height: 28vw;
+    margin: calc(8px - 0.5vw);
+}
+
+.practice_card:hover .practice_card_text {
+    animation: hide 2s forwards;
+}
+
+.practice_card:first-child {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url("https://sun9-63.userapi.com/impf/c-npOXwWhQZNEW9O-wmnYYudWkfbTo04zEcFdA/IgrjKD_epEY.jpg?quality=95&as=32x34,48x51,72x77,108x116,160x171,240x257,358x383&sign=b0eaa340a49dab1c100dc51e393cd91f&from=bu&u=3v6lWlCclM8duTNzjebCmoFK_lcwf0Ude4ZL_01-J9A&cs=358x383");
+    background-size: cover;
+}
+
+.practice_card:nth-child(2) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url("https://atvmedia.ru/uploads/news/202310/169678358515-thumb1.jpg");
+    background-size: cover;
+}
+
+.practice_card:last-child {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url("https://buddhaoriginal.hu/assets/img/faq/faq-img.jpg");
+    background-size: cover;
+}
+
+/* ------------------------------------------------- */
+
+.community {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.community_container {
+    padding: 4vw 12vw;
+    border: 1px solid;
+    border-radius: 40px;
+    margin-bottom: 5vw;
+}
+
+.community_text {
+    width: 70vw;
+    margin-bottom: 5vw;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.community_text h1 {
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.community_button {
+    padding: 2vw 4vw;
+    background: #2c2c2c;
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 2.5vw;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        height: 60px;
+    }
+
+    .header_element,
+    .reg {
+        visibility: hidden;
+        display: none;
+    }
+
+    .header_element:first-child {
+        visibility: visible;
+        display: inline-block;
+        margin: 0px;
+        width: 50px;
+    }
+
+    .header_element:nth-child(3),
+    .signin {
+        display: inline-block;
+        visibility: visible;
+        border: 0;
+        background: 0;
+        margin: 0px 10px 0px 0px;
+        padding-left: 0px;
+        color: #000;
+    }
+
+    /* ------ */
+
+    .name {
+        padding-top: 60px;
+        height: 67vw;
+    }
+
+    .name_title {
+        font-size: 10vw;
+    }
+
+    .name_word {
+        font-size: 6vw;
+    }
+
+    /* ------ */
+
+    .description_title,
+    .theory_title,
+    .practice_title {
+        font-size: 5vw;
+        margin: 20px auto;
+    }
+
+    .description_practice_title,
+    .description_community_title,
+    .description_theory_title {
+        font-size: 5vw;
+    }
+
+    .description_practice_text,
+    .description_community_text,
+    .description_theory_text {
+        font-size: 3.5vw;
+    }
+
+    .description_practice,
+    .description_community,
+    .description_theory {
+        margin: 10px;
+    }
+
+    /* ------ */
+
+    .theory_list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        user-select: none;
+        scrollbar-width: none;
+        justify-content: start;
+    }
+
+    .theory_list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .theory_card_text p,
+    .practice_card_text p {
+        display: none;
+    }
+
+    .theory_card_text h2,
+    .practice_card_text h2 {
+        padding-top: 0px;
+        font-size: 4vw;
+    }
+
+    .theory_card:hover .theory_card_text {
+        animation: none;
+    }
+
+    .theory_card:hover {
+        width: calc(40% + 2vw);
+        min-width: calc(40% + 2vw);
+        height: 52vw;
+        margin: 2px;
+    }
+
+    .theory_card {
+        width: 40%;
+        min-width: 40%;
+        height: 50vw;
+        overflow: hidden;
+        margin: 2px;
+    }
+
+    .practice_card {
+        width: 31%;
+        min-width: 31%;
+        height: 40vw;
+        margin: 2px;
+    }
+
+    .practice_card:hover {
+        width: calc(31% + 1vw);
+        min-width: calc(31% + 1vw);
+        height: 41vw;
+        margin: 2px;
+    }
+
+    /* ------ */
+
+    footer {
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, auto);
+        grid-auto-flow: column;
+    }
+
+    .footer_list_theory {
+        grid-row: span 2;
+    }
+
+    .footer_text {
+        font-size: 2.5vw;
+    }
+
+    .footer_theory_text {
+        padding-bottom: 50px;
+    }
+
+    .footer_title_practice,
+    .footer_title_theory,
+    .footer_title_about {
+        padding-top: 20px;
+        font-size: 5vw;
+        width: 25vw;
+    }
+
+    .footer_list_theory {
+        width: 40vw;
+    }
+
+    /* ----- */
+
+    .community_text {
+        font-size: 3vw;
+    }
+
+    .community_text h1 {
+        font-size: 4.5vw;
+    }
+}
+
+
+
+
+
+
+
+/* Теория(выбор) */
+
+.v_theory {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vw;
+}
+
+.v_theory_title {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 5vw;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.v_theory_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(7, 1fr);
+    justify-content: center;
+}
+
+.v_theory_card {
+    border-radius: 25px;
+    margin: 1vw;
+    padding: 7vw 7vw 3vw 3vw;
+    font-size: 2.5vw;
+    text-align: left;
+    background: #ffffff;
+    border: #ddd 2px solid;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.v_theory_card:hover {
+    background: #9ACEEB;
+    border-color: #9ACEEB;
+    transition: background .5s linear, border-color .5s linear;
+}
+
+@media (max-width: 700px) {
+    .v_theory_title {
+        font-size: 5vw;
+    }
+
+    .v_theory_cards {
+        height: 400vw;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(14, 1fr);
+    }
+    
+    .v_theory_card {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+
+
+
+/* Теория по предмету */
+
+.title {
+    font-size: 4vw;
+    padding-top: 90px;
+    margin-bottom: 4vw;
+    text-align: center;
+}
+
+.text {
+    width: 80%;
+    max-width: 80%;
+    height: 100%;
+    margin: auto 10%;
+}
+
+
+
+
+
+
+
+
+/* Тесты(выбор) */
+
+.v_tests {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vw;
+}
+
+.v_tests_title {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 5vw;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.v_tests_list {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(7, 1fr);
+    justify-content: center;
+}
+
+.v_test_card {
+    border-radius: 25px;
+    margin: 1vw;
+    padding: 7vw 7vw 3vw 3vw;
+    font-size: 2.5vw;
+    text-align: left;
+    background: #ffffff;
+    border: #ddd 2px solid;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.v_test_card:hover {
+    background: #FF9C9C;
+    border-color: #FF9C9C;
+    transition: background .5s linear, border-color .5s linear;
+}
+
+@media (max-width: 700px) {
+    .v_tests_title {
+        font-size: 5vw;
+    }
+
+    .v_tests_list {
+        height: 400vw;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(14, 1fr);
+    }
+
+    .v_test_card {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+
+/* Тесты по предмету */
+
+.subject_test_list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+}
+
+.subject_test {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    font-size: 3vw;
+    margin: 2vw;
+    background: #fff;
+}
+
+.subject_test_title {
+    width: 100%;
+    background: #FF9C9C;
+    border-radius: 10px;
+    padding: 1vw;
+    font-size: 3vw;
+}
+
+.v_subject_test_list {
+    display: none;
+    position: absolute;
+    height: auto;
+    right: 10%;
+    top: 2vw;
+    width: 40%;
+    margin-left: 2vw;
+    border: #FF9C9C solid;
+    padding: 2vw;
+}
+
+.v_subject_test {
+    margin: 0.3vw 0.7vw;
+}
+
+.v_subject_test_list a{
+    color: #000;
+}
+
+.v_subject_test_list a:visited{
+    color: greenyellow;
+}
+
+.subject_test:focus .v_subject_test_list, .v_subject_test_list:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subject_test:focus .subject_test_title {
+    background: #df8989;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Тест по теме */
+
+.test_title {
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 90px;
+}
+
+#test {
+    padding-top: 20px;
+    font-size: 2vw;
+}
+
+p {
+    padding-bottom: 20px;
+    max-width: 70%;
+}
+
+.test_card {
+    margin-bottom: 3vw;
+    margin-left: 4vw;
+    position: relative;
+}
+
+#button {
+    margin-left: 4vw;
+    margin-bottom: 30px;
+}
+
+.test_ans {
+    display: block;
+    width: 50%;
+    height: 4.5vw;
+    padding: .375rem .75rem;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.ans_flex {
+    display: flex;
+    align-items: start;
+}
+
+.ans_result_h {
+    visibility: hidden;
+}
+
+.ans_result_v {
+    visibility: visible;
+    display: inline-block;
+    font-size: 2vw;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+
+}
+
+#button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: .375rem .75rem;
+    font-size: 2vw;
+    line-height: 1.5;
+    border-radius: 5px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.correct {
+    border: 2px solid green;
+}
+
+.incorrect {
+    border: 2px solid red;
+}
+
+@media (max-width: 700px) {
+    .test_ans {
+        height: 8vw;
+    }
+
+    #test,
+    #button,
+    .test_ans,
+    .ans_result_v {
+        font-size: 4vw;
+    }
+
+    .test_title {
+        font-size: 5vw;
+    }
+
+    .test_card {
+        margin-bottom: 5vw;
+    }
+}
+
+
+
+
+
+
+
+/* ОГЭ(выбор) */
+
+.v_oge {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vw;
+}
+
+.v_oge_title {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 5vw;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.v_oge_list {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.v_oge_card {
+    border-radius: 25px;
+    margin: 1vw;
+    padding: 8vw 7vw 5vw 3vw;
+    font-size: 2.5vw;
+    text-align: left;
+    background: #ffffff;
+    border: #ddd 2px solid;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.v_oge_card:hover {
+    background: #98FB98;
+    border-color: #98FB98;
+    transition: background .5s linear, border-color .5s linear;
+}
+
+@media (max-width: 700px) {
+    .v_oge_title {
+        font-size: 5vw;
+    }
+
+    .v_oge_list {
+        height: 250vw;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(10, 1fr);
+    }
+    
+    .v_oge_card {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+
+
+
+/* Викторины(выбор) */
+
+.v_quiz {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vw;
+}
+
+.v_quiz_title {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 5vw;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.v_quiz_list {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.v_quiz_card {
+    border-radius: 25px;
+    margin: 1vw;
+    padding: 8vw 7vw 5vw 3vw;
+    font-size: 2.5vw;
+    text-align: left;
+    background: #ffffff;
+    border: #ddd 2px solid;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.v_quiz_card:hover {
+    background: #EA8DF7;
+    border-color: #EA8DF7;
+    transition: background .5s linear, border-color .5s linear;
+}
+
+@media (max-width: 700px) {
+    .v_quiz_title {
+        font-size: 5vw;
+    }
+
+    .v_quiz_list {
+        height: 250vw;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(10, 1fr);
+    }
+    
+    .v_quiz_card {
+        font-size: 4vw;
+    }
+}

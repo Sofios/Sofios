@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/reset.css">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/style.css">
+    <title>ОГЭ по русскому языку - Sofios</title>
+</head>
+
+<body>
+
+
+    <div id="header"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+
+
+    <div class="title">ОГЭ по Русскому языку</div>
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/reset.css">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/style.css">
+    <title>Теория - Sofios</title>
+</head>
+
+<body>
+
+
+    <div id="header"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+
+
+    <div class="v_theory">
+        <div class="v_theory_title">Теория</div>
+        <div class="v_theory_cards">
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Алгебра.html'">Алгебра</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Английский.html'">Английский язык</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Биология.html'">Биология</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Вероятность.html'">Вероятность и статистика</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/География.html'">География</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Геометрия.html'">Геометрия</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Информатика.html'">Информатика</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/История.html'">История</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Литература.html'">Литература</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Обществознание.html'">Обществознание</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/ОБЖ.html'">ОБЖ</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Русский.html'">Русский язык</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Физика.html'">Физика</button>
+            <button class="v_theory_card" onclick="document.location = '../Теория по предмету/Химия.html'">Химия</button>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+</body>
+
+</html>

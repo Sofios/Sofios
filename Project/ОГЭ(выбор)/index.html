@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/reset.css">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/style.css">
+    <title>ОГЭ - Sofios</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+
+    <div class="v_oge">
+        <div class="v_oge_title">ОГЭ</div>
+        <div class="v_oge_list">
+            <button class="v_oge_card">Английский язык</button>
+            <button class="v_oge_card">Биология</button>
+            <button class="v_oge_card">География</button>
+            <button class="v_oge_card">Информатика</button>
+            <button class="v_oge_card">История</button>
+            <button class="v_oge_card">Математика</button>
+            <button class="v_oge_card">Обществознание</button>
+            <button class="v_oge_card" onclick="window.location = '../Тесты по предмету/index.html'">Русский язык</button>
+            <button class="v_oge_card">Физика</button>
+            <button class="v_oge_card">Химия</button>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/reset.css">
+    <link rel="stylesheet" href="../Повторяющиеся блоки/style.css">
+    <title>Тест по теме: Жизнедеятельность клетки - Sofios</title>
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('header').innerHTML = html);
+    </script>
+
+    
+    <div class="test_title">Тест по теме: Жизнедеятельность клетки <br> Вариант 1</div>
+
+    <div id="test"></div>
+    <div class="ans_flex">
+        <button id="button">Проверить</button>
+    </div>
+
+    
+
+
+    <script>let test = document.querySelector('#test');
+
+        let questions = [
+            {
+                text: '1. Все реакции биологического синтеза веществ в клетке получили название:',
+                text_ans: '1) метаболизм; 2) диссимиляция; 3) ассимиляция; 4) редупликация',
+                right: '3',
+            },
+            {
+                text: '2. Ассимиляция и диссимиляция – это:',
+                text_ans: '1) противоположные процессы; 2) взаимозаменяемые процессы; 3) один и тот же процесс; 4) эти процессы не связаны друг с другом',
+                right: '1',
+            },
+            {
+                text: '3. Синтез АТФ в клетке происходит:',
+                text_ans: '1) в рибосомах; 2) в аппарате Гольджи; 3) в ЭПС; 4) в митохондриях',
+                right: '4',
+            },
+            {
+                text: '4. Большинство организмов используют для клеточного дыхания в первую очередь:',
+                text_ans: '1) углеводы; 2) белки и углеводы; 3) белки и липиды; 4) липиды и углеводы',
+                right: '1',
+            },
+            {
+                text: '5. Жиры вовлекаются в энергетический обмен:',
+                text_ans: '1) постоянно, наряду с белками; 2) постоянно, наряду с углеводами; 3) когда израсходован запас углеводов; 4) когда израсходован запас углеводов и белков',
+                right: '3',
+            },
+            {
+                text: '6. Гликолизом называется последовательность реакций, в результате которых:',
+                text_ans: '1) крахмал и гликоген расщепляются до глюкозы; 2) глюкоза расщепляется на 2 молекулы пировиноградной кислоты; 3) глюкоза расщепляется на 2 молекулы молочной кислоты; 4) глюкоза расщепляется на углекислый газ и воду',
+                right: '2',
+            },
+            {
+                text: '7. Чистый выход АТФ в реакции гликолиза при расщеплении 1 молекулы глюкозы составляет:',
+                text_ans: '1) 2 молекулы; 2) 4 молекулы; 3) 36 молекул; 4) 38 молекул',
+                right: '1',
+            },
+            {
+                text: '8. В каком случае происходит гликолиз:',
+                text_ans: '1) в эритроцитах человека при переносе ими кислорода; 2) на внутренней мембране митохондрий при образовании АТФ; 3) в клетках мышц при накоплении молочной кислоты; 4) на рибосомах при синтезе белка',
+                right: '3',
+            },
+            {
+                text: '9. Исходным материалом для фотосинтеза служит:',
+                text_ans: '1) кислород и углекислый газ; 2) вода и кислород; 3) углекислый газ и вода; 4) углевода.',
+                right: '3',
+            },
+            {
+                text: '10. Энергия возбуждённых электронов в световой стадии фотосинтеза используется:',
+                text_ans: '1) для синтеза АТФ; 2) для синтеза глюкозы; 3) для синтеза белков; 4) для расщепления углеводов',
+                right: '1',
+            },
+            {
+                text: '11. В световой фазе фотосинтеза не происходит:',
+                text_ans: '1) образование глюкозы; 2) фотолиз воды; 3) синтез АТФ; 4) образование кислорода',
+                right: '1',
+            },
+            {
+                text: '12. В результате фотосинтеза в хлоропластах образуется:',
+                text_ans: '1) углекислый газ и кислород; 2) хлорофилл, вода и кислород; 3) углекислый газ, АТФ, кислород; 4) глюкоза, АТФ, кислород',
+                right: '4',
+            },
+            {
+                text: '13. Транскрипция – это процесс:',
+                text_ans: '1) синтеза и – РНК на одной из цепей ДНК; 2) удвоение ДНК; 3) считывания информации с и – РНК; 4) присоединения т – РНК к аминокислоте',
+                right: '1',
+            },
+            {
+                text: '14. Главным событием интерфазы является:',
+                text_ans: '1) изменение структуры ДНК; 2) удвоение ДНК; 3) деление ядра клетки; 4) сокращение наследственного материала в два раза',
+                right: '2',
+            },
+            {
+                text: '15. Жизненным циклом клетки называется последовательность процессов, происходящих в клетке:',
+                text_ans: '1) между профазой и анафазой; 2) между профазой и телофазой; 3) между метафазой и анафазой; 4) от её возникновения до следующего деления',
+                right: '4',
+            },
+        ];
+
+
+        for (let question of questions) {
+            let div = document.createElement('div');
+            test.appendChild(div);
+            div.classList.add('test_card');
+
+            let p = document.createElement('p');
+            p.innerHTML = question.text;
+            div.appendChild(p);
+
+            let p2 = document.createElement('p');
+            p2.innerHTML = question.text_ans;
+            div.appendChild(p2);
+
+            let input = document.createElement('input');
+            input.dataset.right = question.right;
+            div.appendChild(input);
+            input.classList.add('test_ans');
+
+            let ans = document.createElement('div');
+            ans.innerHTML = question.right;
+        }
+
+        let ans_correct = 0;
+        let ans_all = 0;
+        let ans_flex = document.querySelector(".ans_flex")
+        let ans = document.createElement('div');
+        ans_flex.appendChild(ans)
+        ans.classList.add('ans_result_h');
+        let button = document.querySelector('#button');
+        button.addEventListener('click', function () {
+            ans_all = 0;
+            ans_correct = 0;
+            let inputs = document.querySelectorAll('#test input');
+
+            for (let input of inputs) {
+                input.classList.remove('correct');
+                input.classList.remove('incorrect');
+                ans_all += 1;
+                
+                if (input.value.toLowerCase() == input.dataset.right.toLowerCase()) {
+                    input.classList.add('correct');
+                    ans_correct += 1;
+                } else {
+                    input.classList.add('incorrect');
+                }
+            }
+            ans.innerHTML = "У вас " + ans_correct + " правильных ответов из " + ans_all;
+            ans.classList.remove("ans_result_v");
+            ans.classList.add("ans_result_v");
+        })
+        ;</script>
+  
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("../Повторяющиеся блоки/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+
+</body>
+
+</html>
